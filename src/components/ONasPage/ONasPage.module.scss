@@ -1,0 +1,173 @@
+.headerDiv {
+  width: 100%;
+  background-color: #ce2026;
+  height: 12px;
+}
+
+.section {
+  width: 100%;
+  background-color: #80767b0f;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 48px 24px;
+
+  @media (min-width: 768px) {
+    padding: 70px 24px;
+  }
+}
+
+.title {
+  color: #28292b;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.7px;
+
+  margin-bottom: 48px;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 70px;
+  }
+}
+
+.subTitle {
+  color: #ce2026;
+
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.7px;
+
+  margin-bottom: 18px;
+
+  @media (min-width: 768px) {
+    text-align: left;
+    font-size: 32px;
+  }
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.7px;
+  margin-bottom: 12px;
+
+  @media (min-width: 768px) {
+    text-align: left;
+    font-size: 18px;
+  }
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    gap: 60px;
+    flex-direction: row;
+  }
+}
+
+.imgBox {
+  position: relative;
+  object-fit: contain;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+}
+
+.itemImg {
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  max-width: 220px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.bottomBox {
+  width: 100%;
+  background-color: #80767b0f;
+}
+
+.bottomContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 48px 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    padding: 50px 24px;
+    gap: 0px;
+    flex-direction: row;
+  }
+}
+
+.bottomText {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.7px;
+
+  @media (min-width: 768px) {
+    text-align: left;
+    font-size: 28px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 48px;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 70px;
+  }
+}
+
+.card {
+  background-color: #80767b1c;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}

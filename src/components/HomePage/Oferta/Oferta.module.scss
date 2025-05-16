@@ -1,0 +1,171 @@
+.section {
+  width: 100%;
+  background-color: #e3e3e3;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 48px 24px;
+
+  @media (min-width: 768px) {
+    padding: 100px 24px;
+  }
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.7px;
+
+  margin-bottom: 34px;
+
+  @media (min-width: 768px) {
+    font-size: 34px;
+  }
+}
+
+.textBox {
+  width: 100%;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.7px;
+
+  margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.button {
+  display: inline-block;
+  margin: 20px 0 0;
+}
+
+.imageGrid {
+  margin: 24px auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    gap: 16px;
+  }
+}
+
+.imageCard {
+  position: relative;
+  width: 240px;
+  height: 380px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imageCard:hover {
+  transform: scale(1.02);
+}
+
+.image {
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.4s ease;
+  z-index: 2;
+}
+
+.label {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  transform: translateY(100%);
+  opacity: 1;
+  transition: all 0.4s ease;
+
+  display: flex;
+  align-items: center;
+  height: 65px;
+}
+
+.textImg {
+  text-align: center;
+  height: 122px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.imageCard:hover .overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.imageCard:hover .label {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.imageCard:hover .textImg {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .imageCard {
+    transition: none;
+    &:hover {
+      transform: none;
+    }
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    height: 100%;
+    transition: none;
+  }
+
+  .label,
+  .textImg {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
+}

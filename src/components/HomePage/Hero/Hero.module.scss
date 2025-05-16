@@ -1,0 +1,62 @@
+.hero {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  overflow: hidden;
+  color: white;
+
+  background-image: url(/Hero.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  min-width: 100%;
+  min-height: 60vh;
+
+  @media (min-width: 768px) {
+    min-height: 80vh;
+  }
+}
+
+.textBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1200px;
+}
+
+.heroTitle {
+  text-align: center;
+  font-size: 32px;
+  text-transform: none;
+  font-weight: 500;
+  margin: 0 auto;
+  letter-spacing: 0.5px;
+  width: 95%;
+
+  margin-bottom: 44px;
+
+  @media (min-width: 768px) {
+    font-size: 56px;
+  }
+}
+
+.heroText {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+
+  margin-bottom: 44px;
+
+  @media (min-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.button {
+  margin: 0 auto;
+}

@@ -1,0 +1,13 @@
+.icon {
+  width: 44px;
+  height: 44px;
+  margin: -16px -16px;
+  display: block;
+  stroke: white;
+  fill: white;
+
+  @media (min-width: 768px) {
+    width: 64px;
+    height: 64px;
+  }
+}

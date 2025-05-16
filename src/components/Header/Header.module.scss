@@ -24,7 +24,7 @@
 }
 
 .logoText {
-  width: 224px;
+  width: 220px;
   color: #28292b;
   text-transform: uppercase;
   font-size: 20px;
@@ -38,6 +38,7 @@
 
   @media (min-width: 1024px) {
     font-size: 22px;
+    width: 240px;
   }
 }
 

@@ -11,11 +11,18 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  min-width: 100%;
   min-height: 60vh;
 
   @media (min-width: 768px) {
     min-height: 80vh;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
   }
 }
 
@@ -26,6 +33,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 1200px;
+  z-index: 2;
 }
 
 .heroTitle {

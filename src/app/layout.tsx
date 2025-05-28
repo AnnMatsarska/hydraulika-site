@@ -11,7 +11,7 @@ const manrope = Manrope({
 export const metadata = {
   title: "Hydraulika Siłowa Wałcz",
   description:
-    "36 lat doświadczeń w naprawie i projektowaniu układów hydraulicznych.",
+    "38 lat doświadczeń w naprawie i projektowaniu układów hydraulicznych.",
   icons: {
     icon: "/favicon.ico",
   },

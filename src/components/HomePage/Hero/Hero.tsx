@@ -18,7 +18,7 @@ const Hero = () => {
           Profesjonalne rozwiązania w hydraulice siłowej
         </h1>
         <p className={styles.heroText}>
-          36 lat doświadczenia w hydraulice siłowej
+          38 lat doświadczenia w hydraulice siłowej
         </p>
         <button
           type="button"

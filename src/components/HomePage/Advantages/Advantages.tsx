@@ -16,7 +16,7 @@ const Advantages = () => {
             <div className={styles.icon}>36</div>
             <p className={styles.itemTitle}>Lat doświadczenia</p>
             <p className={styles.itemText}>
-              36 lat doświadczenia w branży hydrauliki siłowej
+              38 lat doświadczenia w branży hydrauliki siłowej
             </p>
           </li>
           <li className={styles.advItem}>

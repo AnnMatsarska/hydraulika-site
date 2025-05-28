@@ -17,7 +17,7 @@ const ONas = () => {
           <div className={styles.textBox}>
             <h2 className={styles.title}>O firmie Hydraulika Siłowa Wałcz </h2>
             <p className={styles.text}>
-              Od 36 lat Hydraulika Siłowa Wałcz dostarcza niezawodne rozwiązania
+              Od 38 lat Hydraulika Siłowa Wałcz dostarcza niezawodne rozwiązania
               w hydraulice siłowej. Zaczynaliśmy jako mały warsztat, a dziś
               jesteśmy cenionym specjalistą w naprawie siłowników, rozdzielaczy
               i projektowaniu systemów hydraulicznych.

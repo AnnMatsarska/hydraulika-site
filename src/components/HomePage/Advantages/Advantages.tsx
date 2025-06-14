@@ -13,7 +13,7 @@ const Advantages = () => {
         </p>
         <ul className={styles.advBox}>
           <li className={styles.advItem}>
-            <div className={styles.icon}>36</div>
+            <div className={styles.icon}>38</div>
             <p className={styles.itemTitle}>Lat doświadczenia</p>
             <p className={styles.itemText}>
               38 lat doświadczenia w branży hydrauliki siłowej

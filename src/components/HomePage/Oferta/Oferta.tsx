@@ -34,25 +34,25 @@ const Oferta = () => {
           <div className={styles.imageGrid}>
             {[
               {
-                src: "/homePage/oferta/oferta1.webp",
+                src: "/homePage/oferta/oferta1.PNG",
                 label: "Siłowniki",
                 textImg:
                   "Regenerujemy i serwisujemy siłowniki hydrauliczne wszystkich typów i zastosowań.",
               },
               {
-                src: "/homePage/oferta/oferta4.webp",
+                src: "/homePage/oferta/oferta4.PNG",
                 label: "Rozdzielacze",
                 textImg:
                   "Zapewniamy pełną diagnostykę i naprawę zaworów i rozdzielaczy hydraulicznych.",
               },
               {
-                src: "/homePage/oferta/oferta2.webp",
+                src: "/homePage/oferta/oferta2.PNG",
                 label: "Nowoczesne zaplecze",
                 textImg:
                   "Pracujemy na wysokiej klasy sprzęcie, co gwarantuje dokładność i jakość.",
               },
               {
-                src: "/homePage/oferta/oferta3.webp",
+                src: "/homePage/oferta/oferta3.PNG",
                 label: "Doświadczony zespół",
                 textImg:
                   "Nasi mechanicy to wykwalifikowani specjaliści z wieloletnią praktyką.",

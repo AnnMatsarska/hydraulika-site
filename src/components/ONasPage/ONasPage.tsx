@@ -64,7 +64,7 @@ const ONasPageComponent = () => {
             </div>
             <div className={styles.imgBox}>
               <Image
-                src="/oNasPage/oNasPage1.webp"
+                src="/oNasPage/oNasPage1.PNG"
                 alt="Nasza Historia"
                 fill
                 className={styles.itemImg}

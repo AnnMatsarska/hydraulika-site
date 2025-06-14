@@ -37,7 +37,7 @@ const ONas = () => {
           </div>
           <div className={styles.imgBox}>
             <Image
-              src="/Onas.webp"
+              src="/Onas.jpeg"
               alt="Logo"
               fill
               className={styles.logoImg}

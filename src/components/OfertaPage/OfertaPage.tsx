@@ -59,7 +59,7 @@ const OfertaPageComponent = () => {
             <li id="projektowanie" className={styles.item}>
               <div className={styles.imgBox}>
                 <Image
-                  src="/ofertaPage/hydrauliksysteme-hydraulikblocke-mit-ventilaufbau-600x375.webp"
+                  src="/ofertaPage/hydrauliksysteme-hydraulikblocke-mit-ventilaufbau-600x375.png"
                   alt="Projektowanie i Budowa Systemów"
                   fill
                   className={styles.itemImg}
@@ -122,7 +122,7 @@ const OfertaPageComponent = () => {
             <li id="konserwacja" className={styles.item}>
               <div className={styles.imgBox}>
                 <Image
-                  src="/ofertaPage/ChatGPT Image 14 черв. 2025 р., 17_55_21.png"
+                  src="/ofertaPage/ChatGPT Image 14 черв. 2025 р., 18_05_03.png"
                   alt="Konserwacja i Przygotowanie do UDT"
                   fill
                   className={styles.itemImg}

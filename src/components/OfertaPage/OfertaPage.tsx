@@ -59,7 +59,7 @@ const OfertaPageComponent = () => {
             <li id="projektowanie" className={styles.item}>
               <div className={styles.imgBox}>
                 <Image
-                  src="/ofertaPage/projektowanie.png"
+                  src="/ofertaPage/projektowanie.webp"
                   alt="Projektowanie i Budowa Systemów"
                   fill
                   className={styles.itemImg}
@@ -91,7 +91,7 @@ const OfertaPageComponent = () => {
             <li id="doradztwo" className={styles.item}>
               <div className={styles.imgBox}>
                 <Image
-                  src="/ofertaPage/doradstvo.jpeg"
+                  src="/ofertaPage/doradstvo.avif"
                   alt="Doradztwo Techniczne"
                   fill
                   className={styles.itemImg}
@@ -122,7 +122,7 @@ const OfertaPageComponent = () => {
             <li id="konserwacja" className={styles.item}>
               <div className={styles.imgBox}>
                 <Image
-                  src="/ofertaPage/konservacja.png"
+                  src="/ofertaPage/konservacja.webp"
                   alt="Konserwacja i Przygotowanie do UDT"
                   fill
                   className={styles.itemImg}

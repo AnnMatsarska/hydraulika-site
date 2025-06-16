@@ -37,7 +37,7 @@ const ONas = () => {
           </div>
           <div className={styles.imgBox}>
             <Image
-              src="/onas.jpeg"
+              src="/onas.avif"
               alt="Logo"
               fill
               className={styles.logoImg}

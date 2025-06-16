@@ -57,17 +57,17 @@ const KontaktPageComponent = () => {
                 />
                 <label htmlFor="phone">Email</label>
                 <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
+                  type="email"
+                  id="email"
+                  name="email"
                   placeholder="example@mail.com"
                   required
                 />
                 <label htmlFor="email">Numer telefonu</label>
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
+                  type="tel"
+                  id="phone"
+                  name="phone"
                   placeholder="+48 123‑456‑789"
                   required
                 />

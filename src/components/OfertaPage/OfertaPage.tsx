@@ -26,8 +26,8 @@ const OfertaPageComponent = () => {
             <li id="naprawa" className={styles.item}>
               <div className={styles.imgBox}>
                 <Image
-                  src="/ofertaPage/content-hydraulika-silowa.webp"
-                  alt=" Naprawa i Serwis Hydrauliki Siłowej"
+                  src="/ofertaPage/naprava.webp"
+                  alt="Naprawa i Serwis Hydrauliki Siłowej"
                   fill
                   className={styles.itemImg}
                   unoptimized
@@ -59,7 +59,7 @@ const OfertaPageComponent = () => {
             <li id="projektowanie" className={styles.item}>
               <div className={styles.imgBox}>
                 <Image
-                  src="/ofertaPage/hydrauliksysteme-hydraulikblocke-mit-ventilaufbau-600x375.png"
+                  src="/ofertaPage/projektowanie.png"
                   alt="Projektowanie i Budowa Systemów"
                   fill
                   className={styles.itemImg}
@@ -91,7 +91,7 @@ const OfertaPageComponent = () => {
             <li id="doradztwo" className={styles.item}>
               <div className={styles.imgBox}>
                 <Image
-                  src="/ofertaPage/Grabs-Wellsford_1.51-Large-1024x576.jpeg"
+                  src="/ofertaPage/doradstvo.jpeg"
                   alt="Doradztwo Techniczne"
                   fill
                   className={styles.itemImg}
@@ -122,7 +122,7 @@ const OfertaPageComponent = () => {
             <li id="konserwacja" className={styles.item}>
               <div className={styles.imgBox}>
                 <Image
-                  src="/ofertaPage/ChatGPT Image 14 черв. 2025 р., 18_05_03.png"
+                  src="/ofertaPage/konservacja.png"
                   alt="Konserwacja i Przygotowanie do UDT"
                   fill
                   className={styles.itemImg}

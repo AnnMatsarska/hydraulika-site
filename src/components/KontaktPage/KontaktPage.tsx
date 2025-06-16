@@ -1,8 +1,77 @@
-import React from "react";
+"use client";
+
+import React, { ChangeEvent, FormEvent, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import styles from "./KontaktPage.module.scss";
 
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
+type SubmitStatus = "" | "success" | "error";
+
 const KontaktPageComponent = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [submitStatus, setSubmitStatus] = useState<SubmitStatus>("");
+
+  const SERVICE_ID: string = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+  const TEMPLATE_ID: string = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+  const PUBLIC_KEY: string = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ): void => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus("");
+
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        },
+        PUBLIC_KEY
+      );
+
+      setSubmitStatus("success");
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <div className={styles.headerDiv}></div>
@@ -46,44 +115,70 @@ const KontaktPageComponent = () => {
             <div className={styles.contactSeparator}></div>
             <div className={styles.contactForm}>
               <h2>Formularz kontaktowy</h2>
-              <form>
+
+              {submitStatus === "success" && (
+                <div className={styles.successMessage}>
+                  ✅ Wiadomość została wysłana pomyślnie!
+                </div>
+              )}
+              {submitStatus === "error" && (
+                <div className={styles.errorMessage}>
+                  ❌ Wystąpił błąd podczas wysyłania wiadomości. Spróbuj
+                  ponownie.
+                </div>
+              )}
+              <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Imię i nazwisko</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   placeholder="Twoje imię i nazwisko"
                   required
+                  disabled={isSubmitting}
                 />
+
                 <label htmlFor="phone">Email</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   placeholder="example@mail.com"
                   required
+                  disabled={isSubmitting}
                 />
                 <label htmlFor="email">Numer telefonu</label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
                   placeholder="+48 123‑456‑789"
                   required
+                  disabled={isSubmitting}
                 />
                 <label htmlFor="message">Wiadomość</label>
                 <textarea
                   id="message"
                   name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                   placeholder="Wpisz swoją wiadomość..."
                   required
+                  disabled={isSubmitting}
                 ></textarea>
                 <button
                   type="submit"
-                  aria-label="Uzyskaj konsultację"
+                  aria-label="Wyślij wiadomość"
                   className={`common-button ${styles.button}`}
+                  disabled={isSubmitting}
                 >
-                  Wyślij
+                  {isSubmitting ? "Wysyłanie..." : "Wyślij"}
                 </button>
               </form>
             </div>
